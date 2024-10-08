@@ -1,4 +1,9 @@
 public class Ponto {
-    int nivel;
-    int coluna;
+    int x;
+    int y;
+
+    public Ponto(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
 }

@@ -8,6 +8,8 @@ public class Arvore {
     }
 
     public void geraArvore(int[][] matriz){
-        int raiz = new Node(matriz[0][0]);
+        Ponto p = new Ponto(0, 0);
+        this.raiz = new Node(p);
+
     }
 }
