@@ -1,3 +1,5 @@
+package br.ifes.bsi.tpa.labirinto;
+
 import java.util.ArrayList;
 
 public class Node {

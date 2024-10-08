@@ -1,3 +1,5 @@
+package br.ifes.bsi.tpa.labirinto;
+
 public class Ponto {
     int x;
     int y;
