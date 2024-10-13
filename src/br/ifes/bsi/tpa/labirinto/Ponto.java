@@ -8,4 +8,8 @@ public class Ponto {
         this.linha = linha;
         this.coluna = coluna;
     }
+
+    public void imprimir(){
+        System.out.println("linha: " + linha + " " + "coluna: " + coluna);
+    }
 }

@@ -9,21 +9,13 @@ public class Node {
 
     public Node(Ponto p){
         this.pai = null;
-        this.filhos = null;
+        this.filhos = new ArrayList<>();
         this.posicao = p;
     }
 
     public Node(Node pai, Ponto p){
         this.pai = pai;
-        this.filhos = null;
+        this.filhos = new ArrayList<>();
         this.posicao = p;
     }
-
-    public void encontrarFilhos(Node n, Node raiz, int[][] Matriz){};
-
-    public boolean encontrouSaida(Node n, Node raiz, int[][] Matriz){
-        return false;
-    };
-
-
 }
