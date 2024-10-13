@@ -6,13 +6,11 @@ public class Node {
     Node pai;
     ArrayList<Node> filhos;
     Ponto posicao;
-    int valor;
 
     public Node(Ponto p){
         this.pai = null;
         this.filhos = null;
         this.posicao = p;
-        this.valor = -1;
     }
 
     public Node(Node pai, Ponto p){

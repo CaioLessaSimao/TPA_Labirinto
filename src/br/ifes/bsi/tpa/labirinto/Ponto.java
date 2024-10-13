@@ -1,11 +1,11 @@
 package br.ifes.bsi.tpa.labirinto;
 
 public class Ponto {
-    int x;
-    int y;
+    int linha;
+    int coluna;
 
-    public Ponto(int x, int y){
-        this.x = x;
-        this.y = y;
+    public Ponto(int linha, int coluna){
+        this.linha = linha;
+        this.coluna = coluna;
     }
 }
