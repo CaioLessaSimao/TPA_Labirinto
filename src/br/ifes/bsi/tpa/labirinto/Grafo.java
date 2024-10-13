@@ -120,10 +120,11 @@ public class Grafo {
 
         for (Node n = saida.pai; n != null; n = n.pai) {
             atual.filho = new NodeResposta(n.posicao);
+            atual.filho.pai = atual;
             atual = atual.filho;
         }
 
-        imprimirResposta(res);
+        imprimirResposta(atual);
 
         return res;
     }
@@ -132,7 +133,7 @@ public class Grafo {
         NodeResposta atual = lista;
         while (atual != null) {
             atual.posicao.imprimir();
-            atual = atual.filho;
+            atual = atual.pai;
         }
     }
 
