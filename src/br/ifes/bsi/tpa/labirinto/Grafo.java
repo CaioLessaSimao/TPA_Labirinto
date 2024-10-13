@@ -114,7 +114,7 @@ public class Grafo {
         }
     }
 
-    public static NodeResposta inverteEstrutura(Node saida) {
+    public static void inverteEstrutura(Node saida) {
         NodeResposta res = new NodeResposta(saida.posicao);
         NodeResposta atual = res;
 
@@ -125,8 +125,6 @@ public class Grafo {
         }
 
         imprimirResposta(atual);
-
-        return res;
     }
 
     public static void imprimirResposta(NodeResposta lista) {

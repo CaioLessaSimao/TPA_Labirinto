@@ -13,7 +13,7 @@ public class Main {
             Node entrada = new Node(pEntrada);
             Grafo grafo = new Grafo(entrada, rows, cols);
             grafo.encontrarFilhos(matrix, entrada);
-            NodeResposta res = Grafo.inverteEstrutura(grafo.saida);
+            Grafo.inverteEstrutura(grafo.saida);
 
 
 
