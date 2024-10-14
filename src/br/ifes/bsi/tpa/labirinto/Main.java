@@ -1,4 +1,5 @@
 package br.ifes.bsi.tpa.labirinto;
+import javax.swing.*;
 import java.io.IOException;
 
 public class Main {
@@ -13,7 +14,7 @@ public class Main {
             Node entrada = new Node(pEntrada);
             Grafo grafo = new Grafo(entrada, rows, cols);
             grafo.encontrarFilhos(matrix, entrada);
-            Grafo.inverteEstrutura(grafo.saida);
+            NodeResposta caminho = Grafo.inverteEstrutura(grafo.saida);
 
 
 
@@ -24,6 +25,10 @@ public class Main {
                 }
                 System.out.println();
             }
+
+            SwingUtilities.invokeLater(() -> {
+                Animacao lab = new Animacao(matrix, caminho);
+            });
 
         } catch (IOException e) {
             System.err.println("Erro ao ler o arquivo: " + e.getMessage());

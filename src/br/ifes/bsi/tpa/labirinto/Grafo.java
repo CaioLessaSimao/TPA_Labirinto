@@ -114,9 +114,8 @@ public class Grafo {
         }
     }
 
-    public static void inverteEstrutura(Node saida) {
-        NodeResposta res = new NodeResposta(saida.posicao);
-        NodeResposta atual = res;
+    public static NodeResposta inverteEstrutura(Node saida) {
+        NodeResposta atual = new NodeResposta(saida.posicao);
 
         for (Node n = saida.pai; n != null; n = n.pai) {
             atual.filho = new NodeResposta(n.posicao);
@@ -124,9 +123,13 @@ public class Grafo {
             atual = atual.filho;
         }
 
-        imprimirResposta(atual);
+        //imprimirResposta(atual);
+
+        return atual;
+
     }
 
+    /*
     public static void imprimirResposta(NodeResposta lista) {
         NodeResposta atual = lista;
         while (atual != null) {
@@ -134,5 +137,5 @@ public class Grafo {
             atual = atual.pai;
         }
     }
-
+    */
 }
