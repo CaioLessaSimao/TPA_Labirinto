@@ -123,19 +123,9 @@ public class Grafo {
             atual = atual.filho;
         }
 
-        //imprimirResposta(atual);
 
         return atual;
 
     }
 
-    /*
-    public static void imprimirResposta(NodeResposta lista) {
-        NodeResposta atual = lista;
-        while (atual != null) {
-            atual.posicao.imprimir();
-            atual = atual.pai;
-        }
-    }
-    */
 }
