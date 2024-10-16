@@ -109,7 +109,23 @@ public class Grafo {
     }
 
     private void verificaEncontrouSaida(Node n){
+        if (n.posicao.linha == 0 && n.posicao.coluna == 0){
+            return; //origem
+        }
+
         if (n.posicao.coluna == cols){
+            saida = n;
+        }
+
+        if (n.posicao.linha == rows){
+            saida = n;
+        }
+
+        if (n.posicao.coluna == 0){
+            saida = n;
+        }
+
+        if (n.posicao.linha == 0){
             saida = n;
         }
     }
@@ -122,7 +138,6 @@ public class Grafo {
             atual.filho.pai = atual;
             atual = atual.filho;
         }
-
 
         return atual;
 

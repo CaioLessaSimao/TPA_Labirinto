@@ -38,7 +38,7 @@ public class Animacao extends JFrame {
         playerRow = 0;
         playerCol = 0;
         cells[playerRow][playerCol].setBackground(Color.RED); // Cor do "jogador"
-        setSize(900, 900);
+        setSize(900, 450);
         setLocationRelativeTo(null);
         setVisible(true);
     }
